@@ -1,0 +1,234 @@
+% vim: spell spelllang=da_dk
+
+\documentclass[a4paper, 10pt]{article}
+
+% Tekstindkodning og orddeling
+\usepackage[utf8]{inputenc}
+\usepackage[danish, english]{babel}
+
+\title{Vedtægter for foreningen RKG - Ruskursusgruppen}
+
+\def\vedtagsdato{den 18. november 2016}
+
+\author{}
+\date{Som vedtaget \vedtagsdato{}}
+
+% Palatino skrifttype
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\linespread{1.05}
+
+\renewcommand\thesection{\textsection\arabic{section}}
+
+% Fint hoved og fod
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\renewcommand{\headrulewidth}{0in}
+\renewcommand{\headsep}{40pt}
+\setlength{\headheight}{25pt}
+\pagestyle{fancy}
+\makeatletter
+\let\headtitle\title
+\let\headdate\date
+\makeatother
+\lhead{\headtitle}
+\rhead{\headdate\\}
+\cfoot{Side~\thepage~af~\pageref{LastPage}}
+\fancypagestyle{first}{%
+  \fancyhf{}%
+  \cfoot{Side~\thepage~af~\pageref{LastPage}}%
+}
+
+\usepackage{enumitem}
+
+\newenvironment{stykenum}{
+  \begin{enumerate}[%
+    label=Stk.~\arabic*:, ref=\textsection~\theenumi~Stk.~\arabic*, start=1]
+}{\end{enumerate}}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{first}
+
+\section{Navn og hjemsted}
+\begin{stykenum}
+    \item \label{navn} Foreningens navn er Foreningen af rusvejledere på
+        Datalogisk Institut af 2005, I daglig tale Ruskursusgruppen.
+
+    \item \label{hjemsted} Foreningen har hjemsted Universitetsparken 1,
+        Datalogisk Institut ved Københavns Universitet.
+\end{stykenum}
+
+\section{Formål}
+\begin{stykenum}
+\item \label{formaal} Foreningens formål er at planlægge og udføre de
+    studerendes bidrag til studieintroduktionen for nye studerende på Datalogisk
+    Institut ved Københavns Universitet, samt at forbedre studiemiljøet på tværs
+    af alle årgange.
+\end{stykenum}
+
+\section{Medlemsforhold}
+\begin{stykenum}
+    \item Som medlem kan enhver studerende på Datalogisk Institut ved Københavns
+        Universitet optages.
+
+    \item Indmeldelse sker ved henvendelse til formand eller et andet
+        bestyrelsesmedlem. Ved indmeldelse betales forholdsmæssigt kontingent
+        for den resterende del af året/fuldt kontingent for det resterende år.
+
+    \item Medlemmerne er forpligtet til at overholde foreningens love og
+        vedtægter.
+
+    \item Medlemmerne er berettiget til at møde på generalforsamlingen og stemme
+        om forslag, der rejses på generalforsamlingen.
+
+    \item Medlemmerne er berettiget til/har ret til at indkalde til
+        ekstraordinær generalforsamling, såfremt mindst halvdelen af medlemmerne
+        giver udtryk for ønske om dette.
+
+    \item Medlemskontingent fastsættes for et år ad gangen af
+        generalforsamlingen.
+
+    \item Udmeldelse af foreningen sker skriftligt til enten formanden eller
+        kasseren.
+
+    \item Generalforsamlingen kan beslutte at ekskludere et medlem, som ikke
+        opfylder betingelserne for medlemskabet, eller som handler til skade for
+        foreningen. Beslutning om ekskludering af et medlem af foreningen
+        træffes på generalforsamlingen med 2/3 flertal efter samme procedure som
+        vedtægtsændringer.
+
+    \item Uanset ovenstående vil et medlem automatisk blive ekskluderet fra
+        foreningen, hvis medlemmet ikke betaler kontingent.
+
+    \item Generalforsamlingen kan vælge at optage æresmedlemmer. Et
+        æresmedlemskab giver automatisk opstillings-, tale og stemmeret
+        ummidelbart efter optagelse og frem til næste ordinære
+        generalforsamling.
+\end{stykenum}
+
+\section{Generalforsamlingen}
+\begin{stykenum}
+    \item Generalforsamlingen er foreningens øverste myndighed.
+
+    \item Ordinær generalforsamling afholdes én gang årligt i 4. kvartal.
+
+    \item Mødeberettiget på generalforsamlingen er alle medlemmer, der har
+        betalt kontingent for pågældende år.
+
+    \item Stemmeret på generalforsamlingen har foreningens medlemmer, og
+        medlemmernes stemmer vægtes lige.
+
+    \item Beslutninger på generalforsamlingen træffes med almindeligt flertal,
+        medmindre andet følger af denne vedtægt.
+\end{stykenum}
+
+\section{Indkaldelse til generalforsamling}
+\begin{stykenum}
+    \item Indkaldelse til ordinær generalforsamling skal ske med mindst 2 ugers
+        varsel. Med indkaldelsen skal følge en dagsorden for generalforsamlingen
+        jf. stk. 8. Indkaldelsen offentliggøres via foreningens e-postliste.
+
+    \item Forslag, der ønskes behandlet på generalforsamlingen, skal være
+        formanden i hænde senest 1 uge før generalforsamlingens afholdelse.
+
+    \item Dagsorden for ordinær generalforsamling skal indeholde mindst følgende
+        punkter:
+        \begin{enumerate}[label=\arabic*.]
+            \item Valg af ordstyrer
+            \item Valg af to stemmetællere
+            \item Formandens beretning
+            \item Kasserens beretning
+            \item Forelæggelse og godkendelse af årsregnskab
+            \item Fastsættelse af kontingent
+            \item Uddeling af æresmedlemskaber jf.~stk.~§ 3, stk. 10
+            \item Indkomne forslag
+            \item Valg af formand og næstformand
+            \item Valg af kasser, samt evt.\ assistenter
+            \item Evt.
+        \end{enumerate}
+
+    \item Generalforsamlingen vælger ordstyrer til at lede forhandlingerne.
+        Generalforsamlingens beslutninger indføres til protokol.
+\end{stykenum}
+
+\section{Ekstraordinær generalforsamling}
+\begin{stykenum}
+    \item Ekstraordinær generalforsamling kan til enhver tid indkaldes af
+        bestyrelsen, eller hvis mindst halvdelen af foreningens medlemmer ønsker
+        det. Indkaldelse skal ske med mindst 2 ugers varsel og skal indeholde en
+        dagsorden for generalforsamlingen.
+\end{stykenum}
+
+\section{Foreningens daglige ledelse}
+\begin{stykenum}
+    \item Foreningens daglige ledelse varetages af bestyrelsen på mindst 3 og
+        højest 5 medlemmer, valgt på generalforsamlingen for 1 år ad gangen.
+
+    \item Bestyrelsen leder foreningen i overensstemmelse med nærværende
+        vedtægter og generalforsamlingens beslutninger.
+
+    \item Formand, næstformand, kasser og nul til to bestyrelsesmedlemmer vælges
+        hvert år.
+
+    \item Bestyrelsen fastsætter selv sin forretningsorden.
+
+    \item Formanden leder mødet og i dennes frafald næstformanden.
+
+    \item Bestyrelsen er beslutningsdygtig, når mindst halvdelen af
+        bestyrelsesmedlemmerne er til stede.
+
+    \item Bestyrelsen træffer beslutninger ved simpelt flertal. Ved stemmelighed
+        er formanden eller den fungerende formands stemme afgørende.
+
+    \item Der føres beslutningsreferat over bestyrelsesmøderne, som underskrives
+        af formanden, næstformanden og referenten.
+\end{stykenum}
+
+\section{Tegningsregler}
+\begin{stykenum}
+    \item Foreningen tegnes af formand og kasser.
+\end{stykenum}
+
+\section{Hæftelse}
+\begin{stykenum}
+    \item Foreningen hæfter for sine forpligtelser med den af foreningen til
+        enhver tid tilhørende formue. Der påhviler ikke foreningens medlemmer
+        eller bestyrelsen nogen personlig hæftelse, andet end hvis dette er
+        særlig aftalt.
+\end{stykenum}
+
+\section{Regnskab og revision}
+\begin{stykenum}
+    \item Foreningens regnskabs- og kontingentår følger kalenderåret.
+
+    \item Foreningens formue skal anbringes i anerkendt pengeinstitut.
+
+    \item Kassereren inkasserer kontingent og betaler de af bestyrelsen godkendte
+    regninger. Han fører regnskab over samtlige indtægter og udgifter i en sådan
+    form, at foreningens øjeblikkelige økonomi altid kan aflæses. Kassereren
+    udarbejder foreningens årsregnskab.
+\end{stykenum}
+
+\section{Vedtægtsændringer}
+\begin{stykenum}
+    \item Ændring af nærværende vedtægt kræver vedtagelse på generalforsamling
+        med 2/3 af de afgivne stemmer.
+\end{stykenum}
+
+\section{Opløsning}
+\begin{stykenum}
+    \item Foreningen kan kun opløses på en generalforsamling, som er indkaldt
+        med dette for øje.
+
+    \item Opløsning af foreningen kræver vedtagelse med 2/3 majoritet af
+        samtlige foreningens medlemmer. Opnås denne majoritet ikke, er
+        bestyrelsen berettiget til at indkalde til en ny generalforsamling, på
+        hvilken opløsning kan vedtages med 2/3 majoritet af de fremmødte
+        medlemmer.
+
+    \item Eventuelt overskud/formue bliver ved opløsningen af foreningen delt
+        ligeligt imellem alle medlemmer.
+\end{stykenum}
+\end{document}
