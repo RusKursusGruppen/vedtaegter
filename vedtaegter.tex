@@ -43,9 +43,20 @@
 
 \newenvironment{stykenum}{
   \begin{enumerate}[%
-    label=Stk.~\arabic*:, ref=\textsection~\theenumi~Stk.~\arabic*, start=1]
+    label=Stk.~\arabic*:, ref=\thesection~Stk.~\arabic{enumi}, start=1]
 }{\end{enumerate}}
 
+\newenvironment{substykenum}{
+  \begin{enumerate}[%
+          label=Stk.~\arabic{enumi}.\arabic*:,
+      ref=\thesection~Stk.~\arabic{enumi}.\arabic*, start=1]
+}{\end{enumerate}}
+
+\newenvironment{subsubstykenum}{
+  \begin{enumerate}[%
+      label=Stk.~\arabic{enumi}.\arabic{enumii}.\arabic*:,
+      ref=\thesection~Stk.~\arabic{enumi}.\arabic{enumii}.\arabic*, start=1]
+}{\end{enumerate}}
 \begin{document}
 
 \maketitle
@@ -53,19 +64,19 @@
 
 \section{Navn og hjemsted}
 \begin{stykenum}
-    \item \label{navn} Foreningens navn er Foreningen af rusvejledere på
-        Datalogisk Institut af 2005, I daglig tale Ruskursusgruppen.
+    \item \label{navn} Foreningens navn er RusKursusGruppen. I daglig tale RKG.
 
-    \item \label{hjemsted} Foreningen har hjemsted Universitetsparken 1,
+    \item \label{hjemsted} Foreningens hjemsted er Universitetsparken 1,
         Datalogisk Institut ved Københavns Universitet.
+
 \end{stykenum}
 
 \section{Formål}
 \begin{stykenum}
-\item \label{formaal} Foreningens formål er at planlægge og udføre de
-    studerendes bidrag til studieintroduktionen for nye studerende på Datalogisk
-    Institut ved Københavns Universitet, samt at forbedre studiemiljøet på tværs
-    af alle årgange.
+\item \label{formaal} Foreningens formål er at planlægge og afholde  rustur, at
+    være til stede under campusdagene, at afholde sociale arrangementer for
+    førsteårsstuderende i løbet af studieåret,  samt at forbedre studiemiljøet
+    på tværs af alle årgange.
 \end{stykenum}
 
 \section{Medlemsforhold}
@@ -74,18 +85,23 @@
         Universitet optages.
 
     \item Indmeldelse sker ved henvendelse til formand eller et andet
-        bestyrelsesmedlem. Ved indmeldelse betales forholdsmæssigt kontingent
-        for den resterende del af året/fuldt kontingent for det resterende år.
+        bestyrelsesmedlem. Ved indmeldelse betales fuldt kontingent for det
+        resterende år.
 
     \item Medlemmerne er forpligtet til at overholde foreningens love og
         vedtægter.
 
-    \item Medlemmerne er berettiget til at møde på generalforsamlingen og stemme
-        om forslag, der rejses på generalforsamlingen.
+    \item Aktive medlemmer er berettiget til at møde på generalforsamlingen og
+        stemme om forslag, der rejses på generalforsamlingen.
+        \begin{substykenum}
+            \item Aktive medlemmer har enten deltaget i afholdelse af rustur
+                og/eller campusdage det pågældende år som vejleder, eller er
+                æresmedlemmer.
+        \end{substykenum}
 
-    \item Medlemmerne er berettiget til/har ret til at indkalde til
-        ekstraordinær generalforsamling, såfremt mindst halvdelen af medlemmerne
-        giver udtryk for ønske om dette.
+    \item Aktive medlemmer  er berettiget til/har ret til at indkalde til
+        ekstraordinær generalforsamling, såfremt mindst halvdelen af de aktive
+        medlemmer giver udtryk for ønske om dette.
 
     \item Medlemskontingent fastsættes for et år ad gangen af
         generalforsamlingen.
@@ -98,26 +114,60 @@
         foreningen. Beslutning om ekskludering af et medlem af foreningen
         træffes på generalforsamlingen med 2/3 flertal efter samme procedure som
         vedtægtsændringer.
+        \begin{substykenum}
+        \item Et flertal i bestyrelsen kan ekskludere et medlem i 2 uger, indtil
+            næste  generalforsamling.
+        \end{substykenum}
 
     \item Uanset ovenstående vil et medlem automatisk blive ekskluderet fra
         foreningen, hvis medlemmet ikke betaler kontingent.
 
-    \item Generalforsamlingen kan vælge at optage æresmedlemmer. Et
-        æresmedlemskab giver automatisk opstillings-, tale og stemmeret
-        ummidelbart efter optagelse og frem til næste ordinære
-        generalforsamling.
+    \item Et medlem kan ekskluderes øjeblikkeligt såfremt medlemmet indleder
+        seksuel aktivitet med en ny studerende inden afholdelse af
+        førsteårsfesten.
+        \begin{substykenum}
+            \item Afholdes førsteårsfesten ikke, er gældende tidsfrist 1.
+                November kl. 13:37.
+
+            \item Mistænkes et medlem for at have brudt stk. 10, indkaldes
+                medlemmet til et møde med bestyrelsen, hvor den endelige
+                beslutning tages af bestyrelsen.
+
+            \item Hvis det er første gang et medlem ekskluderes af ovenstående
+                årsag, har medlemmet karantæne fra RKG i et år. Hvis det ikke er
+                første gang, er medlemmet ude af RKG for evigt.
+        \end{substykenum}
+
+    \item Foreningens Facebook-gruppe skal reflektere foreningens medlemmer.
+        Dette inkluderer aktive medlemmer, hyttebumser og eventuelle
+        førsteårsvejledere.
+        \begin{substykenum}
+            \item Førsteårsvejledere kan tilføjes efter dværgeaften.
+
+            \item Facebook-gruppens medlemmer opdateres løbende. Som minimum
+                sker det efter 2. Nar.
+
+            \item Bestyrelsen kan til enhver tid ignorere ovenstående
+                regler.
+
+        \end{substykenum}
+
+    \item \label{aeresmedlemmer} Generalforsamlingen kan vælge at optage
+      æresmedlemmer. Et æresmedlemskab giver automatisk opstillings-, tale og
+      stemmeret ummidelbart efter optagelse og frem til næste ordinære
+      generalforsamling.
 \end{stykenum}
 
 \section{Generalforsamlingen}
 \begin{stykenum}
     \item Generalforsamlingen er foreningens øverste myndighed.
 
-    \item Ordinær generalforsamling afholdes én gang årligt i 4. kvartal.
+    \item Ordinær generalforsamling afholdes én gang årligt i 3. kvartal.
 
     \item Mødeberettiget på generalforsamlingen er alle medlemmer, der har
         betalt kontingent for pågældende år.
 
-    \item Stemmeret på generalforsamlingen har foreningens medlemmer, og
+    \item Stemmeret på generalforsamlingen har foreningens aktive medlemmer, og
         medlemmernes stemmer vægtes lige.
 
     \item Beslutninger på generalforsamlingen træffes med almindeligt flertal,
@@ -128,29 +178,42 @@
 \begin{stykenum}
     \item Indkaldelse til ordinær generalforsamling skal ske med mindst 2 ugers
         varsel. Med indkaldelsen skal følge en dagsorden for generalforsamlingen
-        jf. stk. 8. Indkaldelsen offentliggøres via foreningens e-postliste.
+        jf. \ref{dagsorden}. Indkaldelsen offentliggøres via foreningens
+        Facebook-gruppe.
 
     \item Forslag, der ønskes behandlet på generalforsamlingen, skal være
         formanden i hænde senest 1 uge før generalforsamlingens afholdelse.
 
-    \item Dagsorden for ordinær generalforsamling skal indeholde mindst følgende
-        punkter:
+    \item \label{dagsorden} Dagsorden for ordinær generalforsamling skal
+        indeholde mindst følgende punkter:
         \begin{enumerate}[label=\arabic*.]
-            \item Valg af ordstyrer
-            \item Valg af to stemmetællere
-            \item Formandens beretning
-            \item Kasserens beretning
-            \item Forelæggelse og godkendelse af årsregnskab
-            \item Fastsættelse af kontingent
-            \item Uddeling af æresmedlemskaber jf.~stk.~§ 3, stk. 10
+            \item Valg af ordstyrer og referent.
+
+            \item Valg af to stemmetællere.
+
+            \item Formandens beretning.
+
+            \item Kasserens beretning.
+
+            \item Forelæggelse og godkendelse af årsregnskab.
+
+            \item Fastsættelse af kontingent.
+
+            \item Uddeling af æresmedlemskaber jf.~\ref{aeresmedlemmer}
+
             \item Indkomne forslag
+
             \item Valg af formand og næstformand
-            \item Valg af kasser, samt evt.\ assistenter
+
+            \item Valg af kasser, samt evt.  assistenter.
+
+            \item Valg af antal af menige medlemmer i bestyrelsen samt deres
+                roller.
+
+            \item Valg af menige medlemmer.
+
             \item Evt.
         \end{enumerate}
-
-    \item Generalforsamlingen vælger ordstyrer til at lede forhandlingerne.
-        Generalforsamlingens beslutninger indføres til protokol.
 \end{stykenum}
 
 \section{Ekstraordinær generalforsamling}
@@ -163,14 +226,14 @@
 
 \section{Foreningens daglige ledelse}
 \begin{stykenum}
-    \item Foreningens daglige ledelse varetages af bestyrelsen på mindst 3 og
-        højest 5 medlemmer, valgt på generalforsamlingen for 1 år ad gangen.
+    \item Foreningens daglige ledelse varetages af bestyrelsen på mindst 3
+        medlemmer, valgt på generalforsamlingen for 1 år ad gangen.
 
-    \item Bestyrelsen leder foreningen i overensstemmelse med nærværende
+    \item Bestyrelsen leder foreningen i overensstemmelse med nuværende
         vedtægter og generalforsamlingens beslutninger.
 
-    \item Formand, næstformand, kasser og nul til to bestyrelsesmedlemmer vælges
-        hvert år.
+    \item Formand, næstformand, kasser og mindst 0 menige bestyrelsesmedlemmer
+        vælges hvert år.
 
     \item Bestyrelsen fastsætter selv sin forretningsorden.
 
@@ -184,6 +247,56 @@
 
     \item Der føres beslutningsreferat over bestyrelsesmøderne, som underskrives
         af formanden, næstformanden og referenten.
+\end{stykenum}
+
+\section{Deltagelse i rustur}
+\begin{stykenum}
+\item Deltagelse i rustur som vejleder sker efter følgende kriterier
+    \begin{substykenum}
+        \item Medlemmer skal deltage i 2. Nar
+        \begin{subsubstykenum}
+            \item Er medlemmet forhindret i deltagelse af 2. Nar, skal der
+                opfyldes andet optagelseskrav, der er opstillet af bestyrelsen.
+        \end{subsubstykenum}
+
+        \item Medlemmet skal have deltaget i mindst 1 internt arrangement,
+            afholdt af Ruskursusgruppen.
+    \end{substykenum}
+
+    \item Deltagelse i rustur som hyttebums sker efter følgende kriterier:
+    \begin{substykenum}
+        \item Som udgangspunkt skal alle hyttebumser have tilmeldt sig inden
+            2.nar.
+        \item Hyttebumser kan stille op som hold, og kan som udgangspunkt ikke
+            splittes op.
+        \item I ekstraordinære tilfælde, kan man blive hyttebums ved tilmeldelse
+            efter 2. Nar.
+    \end{substykenum}
+    \item Hvert vejlederhold afgiver en prioriteret liste over hyttebumser.
+        Bestyrelsen fungerer som puslegruppe.
+        \begin{substykenum}
+            \item Hvis et bestyrelsesmedlem vil være hyttebums, er denne ikke
+                med til at pusle.
+        \end{substykenum}
+    \item Afstemninger om hold af hyttebumser skal ske ved anonym afstemning,
+        hvor der kræves enstemmig ja, for at hyttebumserne kan godkendes.
+        \begin{substykenum}
+            \item Tilmelding som hyttebums efter fristen kræver en anonym
+                afstemning blandt det givne vejlederhold, samt allerede
+                tilknyttede hyttebumser. Resultatet skal være et enstemmig ja.
+        \end{substykenum}
+\end{stykenum}
+
+\section{Pusling}
+\begin{stykenum}
+    \item Pusleholdet skal bestå af tre personer, offentligt valgt på 2. Nar.
+        \begin{substykenum}
+            \item Mindst én pusler skal have puslet tidligere. Hvis ikke dette
+                er muligt, skal en tidligere pusler introducere puslingen til
+                det nye puslehold, men uden at få noget fortroligt information.
+        \end{substykenum}
+    \item Puslingen er strengt fortroligt, og eventuelle brud på denne
+        tavshedspligt behandles af bestyrelsen.
 \end{stykenum}
 
 \section{Tegningsregler}
@@ -205,16 +318,19 @@
 
     \item Foreningens formue skal anbringes i anerkendt pengeinstitut.
 
-    \item Kassereren inkasserer kontingent og betaler de af bestyrelsen godkendte
-    regninger. Han fører regnskab over samtlige indtægter og udgifter i en sådan
-    form, at foreningens øjeblikkelige økonomi altid kan aflæses. Kassereren
-    udarbejder foreningens årsregnskab.
+    \item Kassereren indkasserer kontingent og betaler de af bestyrelsen
+        godkendte regninger. Vedkommende fører regnskab over samtlige indtægter
+        og udgifter i en sådan form, at foreningens øjeblikkelige økonomi altid
+        kan aflæses. Kassereren udarbejder foreningens årsregnskab.
 \end{stykenum}
 
 \section{Vedtægtsændringer}
 \begin{stykenum}
-    \item Ændring af nærværende vedtægt kræver vedtagelse på generalforsamling
+    \item Ændring af nuværende vedtægt kræver vedtagelse på generalforsamling
         med 2/3 af de afgivne stemmer.
+    \begin{substykenum}
+        \item Blanke stemmer tælles ikke med i antallet af afgivne stemmer.
+    \end{substykenum}
 \end{stykenum}
 
 \section{Opløsning}
@@ -223,7 +339,7 @@
         med dette for øje.
 
     \item Opløsning af foreningen kræver vedtagelse med 2/3 majoritet af
-        samtlige foreningens medlemmer. Opnås denne majoritet ikke, er
+        samtlige foreningens aktive medlemmer. Opnås denne majoritet ikke, er
         bestyrelsen berettiget til at indkalde til en ny generalforsamling, på
         hvilken opløsning kan vedtages med 2/3 majoritet af de fremmødte
         medlemmer.
